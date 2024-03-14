@@ -1,10 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { db, Comment } from 'astro:db';
+
+const comments = await db.select().from(Comment);
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
+		<div>
+
+		<h2>Comments</h2>
+		{
+			comments.map(({ author, likes }) => (
+				<article>
+					<p>Author: {author}</p>
+					<p>Likes: {likes}</p>
+				</article>
+			))
+		}
+
+		</div>
+
 		<svg
 			class="astro-a"
 			width="495"
