@@ -15,5 +15,19 @@ Enlazar Astro db:
 
 Añadir db:
 ```
-npx astro add db
+  npx astro add db
+```
+## Push a db
+```
+  npx astro db push --remote
+```
+
+## Seed
+Editar `seed.ts` y ejecutar para sincronizar:
+```
+  npx astro db execute db/seed.ts --remote
+```
+## Run con remote
+```
+  npx astro db run --remote
 ```
