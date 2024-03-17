@@ -31,3 +31,5 @@ Editar `seed.ts` y ejecutar para sincronizar:
 ```
   npx astro db run --remote
 ```
+
+Docs: https://docs.astro.build/en/guides/astro-db/
