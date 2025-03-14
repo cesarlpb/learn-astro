@@ -1,0 +1,9 @@
+# Created by https://www.toptal.com/developers/gitignore/api/astro
+# Edit at https://www.toptal.com/developers/gitignore?templates=astro
+
+### Astro ###
+# Gitignore template for Astro projects
+# Ignore content collection generated files
+.astro
+
+# End of https://www.toptal.com/developers/gitignore/api/astro

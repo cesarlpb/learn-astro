@@ -1,0 +1,23 @@
+---
+const year = new Date().getFullYear();
+---
+<div id="footer">
+  <footer>
+    <p>Hola desde el componente Footer</p>
+    <p>Todo los derechos reservados &copy; {year}</p>
+  </footer>
+  <script>
+    console.log("Hola desde el componente Footer :)")
+  </script>
+</div>
+
+<style>
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+  }
+</style>
